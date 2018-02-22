@@ -1,0 +1,191 @@
+html{
+  min-height:100vh;
+  min-width: 100vw;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url('http://cdn-media-1.lifehack.org/wp-content/files/2017/01/21060707/Productivity-Desk.jpg');
+  background-position: right center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: background 2s linear;
+  transition: background 2s linear;
+}
+
+.header {
+  margin: 20px auto 20px auto;
+  text-align: center;
+  width: auto;
+  background: rgba(70, 54, 41, .4);
+}
+
+.header h1{
+  color: white;
+  font-family: Pacifico;
+  font-size: 60px;
+}
+
+#settings{
+  float: right;
+  margin: 0 20px 0 0;
+}
+
+#settings button{
+  color: white;
+  border: 1px solid #3a2412;
+  border-radius: 20px;
+  margin: -2px 0 0 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  background: rgba(56, 43, 32, .7);
+}
+
+.container {
+  margin: auto;
+  height: auto;
+  width: 50%;
+  background:rgba(70, 54, 41, .2);
+  border-radius: 20px;
+  color: white;
+}
+
+#change2Session, #change2Break {
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* +- Button */
+form {
+  width: 380px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #3a2412;
+  margin: -2px 0 0 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  background: #382b20;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 25px;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+  padding: 1px 0;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+  padding: 3px 0;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+#break, #session {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #3a2412;
+  border-bottom: 1px solid #3a2412;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  background: #463629
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*/Button */
+
+#clock{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 30px auto;
+  border: 3px solid #BAA378;
+  padding-top:80px;
+  font-size: 40px;
+  cursor:pointer;
+  background: rgba(70, 51, 41, 0.7); 
+  background: -webkit-radial-gradient(rgba(70, 51, 41, 0.7) 100%, rgba(170, 88, 44, 0.7) 100%);
+  background: -o-radial-gradient(rgba(70, 51, 41, 0.7) 100%, rgba(170, 88, 44, 0.7) 100%);
+  background: -moz-radial-gradient(rgba(70, 51, 41, 0.7) 100%, rgba(170, 88, 44, 0.7) 100%);
+  background: radial-gradient(rgba(70, 51, 41, 0.7) 80%, rgba(170, 88, 44, 0.7) 10%);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#timeRem{
+  text-align: center;
+}
+
+#whichSession{
+  text-align: center;
+}
+
+#helpBox {
+  background: rgba(70, 54, 41, .8);
+  color: white;
+  width: 200px;
+  max-height: 1000px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+  html, body {
+    background-position: 86% 50%;
+  }
+  .container{
+    background:rgba(70, 54, 41, .6);
+    width: 90%;
+    margin: 70px auto;
+    padding-left: 0px;
+  }
+  .header h1{
+    font-size:50px;
+  }
+  .value-button{
+    margin: 0;
+  }
+}

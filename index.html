@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+
+<audio id="alarm" src="http://www.orangefreesounds.com/wp-content/uploads/2016/12/Short-ringtone-for-notification.mp3" preload="auto"></audio>
+
+
+
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="header">
+  <h1>Pomodoro Clock</h1>
+</div>
+<div id="settings">
+  <button id="sound" onclick="mute()" title="Mute"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+  <button id="alert" onclick="toggleAlert()" title="Notification"><i class="fa fa-bell" aria-hidden="true"></i>
+</button>
+</div>
+<div class="container">
+  <form>
+    <div class="row">
+      <div id="breakLength" class="col-xs-6">
+        <p id="change2Break">Break Session</p>
+        <div class="value-button" id="decrease" onclick="decreaseValue('break')" value="Decrease Value">-</div>
+        <input type="number" id="break" value="5" onkeyup="updateTimer('break')" min="1" max="99"/>
+        <div class="value-button" id="increase" onclick="increaseValue('break')" value="Increase Value">+</div>
+      </div>
+      <div id="sessionLength" class="col-xs-6">
+        <p id="change2Session">Work Session</p>
+        <div class="value-button" id="decrease" onclick="decreaseValue('session')" value="Decrease Value">-</div>
+        <input type="number" id="session" value="25" onkeyup="updateTimer('session')" min="1" max="99" maxlength="2" />
+        <div class="value-button" id="increase" onclick="increaseValue('session')" value="Increase Value">+</div>
+      </div>
+    </div>
+  </form>
+  <div id="clock" onclick="pausePlay()" title="Click or press Space key to Pause/Play. Double Click to reset">
+    <h2 id="whichSession">Work!</h2>
+    <p id="timeRem">25:00</p>
+  </div>
+  
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
